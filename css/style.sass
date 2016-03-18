@@ -1,0 +1,89 @@
+body
+    font-smoothing: antialiased
+    font-family: 'Open Sans', sans-serif
+    font-size: 16px
+
+// boostrap overide
+.navbar-default
+    background-color: #fff
+    border-color: #fff
+
+.nav.navbar-nav
+    width: 100%
+    display: flex
+    justify-content: space-between
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover
+    color: #333;
+    background-color: #fff
+    font-weight: bold
+
+
+// fin bootstrap overide
+
+.modal-box
+    position: fixed
+    width: 450px
+    height: 700px
+    top: 50%
+    margin-top: -350px
+    left: 50%
+    margin-left: -225px
+    box-shadow: 0 0 50px 1000px rgba(0,0,0,0.5)
+    z-index: 5
+    display: none
+
+h1
+    font-family: 'Lobster', cursive
+    font-weight: bold
+    font-size: 40px
+
+.puntas
+    display: flex
+    justify-content: center
+    align-items: center
+    &:before
+        content: ''
+        width: 0
+        height: 0
+        border-top: 5px solid transparent
+        border-right: 150px solid #333
+        border-bottom: 5px solid transparent
+        margin-right: 20px 
+    &:after
+        content: ''
+        width: 0
+        height: 0
+        border-top: 5px solid transparent
+        border-left: 150px solid #333
+        border-bottom: 5px solid transparent
+        margin-left: 20px
+
+.glyphicon
+    font-size: 46px
+	  
+.avatar
+    position: relative
+    height: 200px
+    .img-dw
+        position: absolute
+        top: 0px
+        right: 50%
+        margin-right: -40px
+        img
+            max-height: 200px
+    .img-jiarcos
+        position: absolute
+        top: 0px
+        left: 50%
+        margin-left: -40px
+        z-index: -1
+        img
+            max-height: 200px
+        
+
+
+
+
