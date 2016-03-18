@@ -29,6 +29,10 @@ body {
   font-weight: bold;
 }
 
+.navbar-default .navbar-nav > li > a:hover {
+  color: #333;
+}
+
 .modal-box {
   position: fixed;
   width: 450px;
