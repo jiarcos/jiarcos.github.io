@@ -10,40 +10,41 @@
 	<!-- Google fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<!-- Google Material Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- Bootstrap -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="container">
+<body class="container-fluid">
+	<!-- NavBar -->
 	<header>
-		<div class="row">	
-			<div class="col-md-12">
-				<nav class="navbar navbar-default">
-				    <!-- burger nav -->
-				    <div class="navbar-header">
-				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				        <span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				      </button>
-				    </div>
+		<nav class="navbar navbar-default">
+		    <!-- burger nav -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		    </div>
 
-				    <!-- links nav -->
-				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				      <ul class="nav navbar-nav">
-				        <li class="active"><a href="#">Sobre Mi<span class="sr-only">(current)</span></a></li>
-				        <li><a href="#">Trabajos</a></li>
-				        <li><a href="#">Contacto</a></li>
-				      </ul>
-				    </div><!-- /.navbar-collapse -->
-				</nav>
-			</div>
-		</div>	
+		    <!-- links nav -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a href="#sobre-mi">Sobre Mi</a></li>
+		        <li><a href="#habilidades">Habilidades</a></li>
+		        <li><a href="#trabajos">Portafolio</a></li>
+		        <li><a href="#contacto">Contacto</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		</nav>
 	</header>
-
-	<section>
+	<!-- Extracto -->
+	<a id="sobre-mi"></a>
+	<section class="container" id="extract">
 		<figure class="row">
 			<div class="avatar col-md-12">
 				<div class="img-dw">
@@ -53,127 +54,192 @@
 					<img src="images/jiarcos.jpg" alt="Jaime Arcos - @jiarcos" class="img-circle img-responsive">
 				</div>
 			</div>
-			<figcaption class="col-md-12 text-center">
-				<h1>Jaime Arcos Silva / @jiarcos</h1>
-				<div class="puntas"><span class="glyphicon glyphicon-star-empty"></span></div>
+
+			<div class="col-md-2"></div>
+			<figcaption class="col-md-8 text-center">
+				<div class="big-title">
+					<h1>Jaime Arcos Silva / @jiarcos</h1>
+					<div class="puntas"><span class="glyphicon glyphicon-star-empty"></span></div>
+				</div>
 				<p>
 					Si hay algo que me caracteriza es la necesidad aprender constantemente. En mi búsqueda del conocimiento he pasado de las Bellas Artes a lo Digital, en los último años evolucionando al Desarrollo Frontend de forma autodidacta. Creo que no hay nada como enfrentar desafíos y finalizarlos con éxito!
 				</p>
 			</figcaption>
+			<div class="col-md-2"></div>
 		</figure>
 	</section>
-
-	<section class="row">
-		<article class="col-md-6">
-			<h3>Estudios</h3>
-			<ul>
-				<li>
-					<p>{{2015}} Diplomado en Desarrollo Frontend | CoderHouse</p>
+	<!-- Experiencia y estudios -->
+	<section class="container" id="experience">
+		<div class="row">
+			<div class="col-sm-1 col-md-2"></div>
+			<article class=" col-sm-5 col-md-4">
+				<h3 class="title-text">Experiencia</h3>
+				<ul>
+					<li>
+						<p>{{2016}} Frontend Developer | Modyo</p>
+					</li>
+					<li>
+						<p>{{2015}} Productor Digital | Shackleton</p>
+					</li>
+					<li>
+						<p>{{2013}} Director de Arte | Caja de Ideas</p>
+					</li>
+					<li>
+						<p>{{2012}} Diseñador Multimedia | Trébol de 4</p>
+					</li>
+				</ul>
+			</article>
+			<article class="col-sm-5 col-md-4">
+				<h3 class="title-text">Estudios</h3>
+				<ul>
+					<li>
+						<p>{{2015}} Desarrollo Frontend | CoderHouse</p>
+					</li>
+					<li>
+						<p>{{2012}} Animación Digital | IP Arcos</p>
+					</li>
+					<li>
+						<p>{{2008}} Diplomado en Crossmedia | IP Arcos</p>
+					</li>
+					<li>
+						<p>{{2004}} Técnico Medio en Artes Visuales | LEA</p>
+					</li>
+				</ul>
+			</article>
+			<div class="col-sm-1 col-md-2"></div>
+		</div>
+	</section>
+	<!-- Habilidades -->
+	<a id="habilidades"></a>
+	<section id="skills">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8  text-center">
+					<div class="big-title">
+						<h2>Habilidades</h2>
+						<div class="puntas"><span class="glyphicon glyphicon-star-empty"></span></div>
+					</div>
+					<p>
+						Me gusta hacer código, no creo ser el mejor, disfruto cada desafio en una curva de apredizaje que incluye la identificación del problema, la busqueda hasta en el último foro de la solución, la frustración de no encotrar nada y la luz al final de un video de youtube.
+					</p>
+				</div>	
+				<div class="col-md-2"></div>
+			</div>
+			<ul class="row">
+				<li class="col-sm-4 col-md-4">
+					<div class="skill-container">
+						<div class="skyll-icon img-circle">
+							<i class="material-icons">code</i>
+						</div>
+						<div>
+							<ul class="text-center skill-list">
+								<li>HTLM5</li>
+								<li>CSS3/Sass</li>
+								<li>Javascript/jQuery</li>
+								<li>Bootstrap</li>
+							</ul>
+						</div>
+					</div>
 				</li>
-				<li>
-					<p>{{2012}} Animador Digital Egresado | IP Arcos</p>
+				<li class="col-sm-4 col-md-4">
+					<div class="skill-container">
+						<div class="skyll-icon img-circle">
+							<i class="material-icons">desktop_mac</i>
+						</div>
+						<div>
+							<ul class="text-center skill-list">
+								<li>SublimeText</li>
+								<li>GitHub</li>
+								<li>Illustrator</li>
+								<li>Photoshop</li>
+							</ul>
+						</div>
+					</div>
 				</li>
-				<li>
-					<p>{{2008}} Diplomado en Crossmedia | IP Arcos</p>
-				</li>
-				<li>
-					<p>{{2004}} Técnico Medio en Artes Visuales | LEA</p>
+				<li class="col-sm-4 col-md-4">
+					<div class="skill-container">
+						<div class="skyll-icon img-circle">
+							<i class="material-icons">battery_charging_full</i>
+						</div>
+						<div>
+							<ul class="text-center skill-list">
+								<li>Aprender</li>
+								<li>Enseñar</li>
+								<li>Liderar</li>
+								<li>Resolver</li>
+							</ul>
+						</div>
+					</div>
 				</li>
 			</ul>
-		</article>
-		<article class="col-md-6">
-			<h3>Experiencia</h3>
-			<ul>
-				<li>
-					<p>{{2016}} Diseñador Web | Modyo</p>
-				</li>
-				<li>
-					<p>{{2015}} Productor Digital | Shackleton</p>
-				</li>
-				<li>
-					<p>{{2013}} Director de Arte | Caja de Ideas</p>
-				</li>
-				<li>
-					<p>{{2012}} Animador Digital | Trébol de Cuatro</p>
-				</li>
-			</ul>
-		</article>
+		</div>
 	</section>
+	<!-- Portfolio -->
+	<a id="trabajos"></a>
+	<section id="portfolio">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8  text-center">
+				<div class="big-title">
+					<h2>Portafolio</h2>
+					<div class="puntas"><span class="glyphicon glyphicon-star-empty"></span></div>
+				</div>
+				<p>
+					Aquí algunos de mis trabajos, quien dice si pronto un encargo tuyo pueda aparecer en esta sección!
+					si ves algo interesant pero no es excatamente lo que buscas, hablemos...  
+				</p>
+			</div>	
+			<div class="col-md-2"></div>
+		</div>
+		<ul class="row">
+			<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
+			<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
+			<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
 
-	<section class="row">
-		<figure class="col-md-4">
-			<img src="http://placehold.it/150x150" alt="Código" class="img-circle">
-			<figcaption>
-				<ul>
-					<li>HTLM5</li>
-					<li>CSS3/Sass</li>
-					<li>Javascript/jQuery</li>
-					<li>Bootstrap</li>
-				</ul>
-			</figcaption>
-		</figure>
-		<figure class="col-md-4">
-			<img src="http://placehold.it/150x150" alt="Software" class="img-circle">
-			<figcaption>
-				<ul>
-					<li>SublimeText</li>
-					<li>Prepros</li>
-					<li>GitHub</li>
-					<li>Photoshop</li>
-				</ul>
-			</figcaption>
-		</figure>
-		<figure class="col-md-4">
-			<img src="http://placehold.it/150x150" alt="Habilidades" class="img-circle">
-			<figcaption>
-				<ul>
-					<li>Aprender</li>
-					<li>Enseñar</li>
-					<li>Liderar</li>
-					<li>Resolver</li>
-				</ul>
-			</figcaption>
-		</figure>
-	</section>
+			<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
+			<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
+			<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
 
-	<section>
-		<figure class="col-md-4">
-			<img src="http://placehold.it/650x400" alt="" class="img-responsive">
-			<figcaption>
-				<small>Descripción</small>
-			</figcaption>
-		</figure>
-		<figure class="col-md-4">
-			<img src="http://placehold.it/650x400" alt="" class="img-responsive">
-			<figcaption>
-				<small>Descripción</small>
-			</figcaption>
-		</figure>
-		<figure class="col-md-4">
-			<img src="http://placehold.it/650x400" alt="" class="img-responsive">
-			<figcaption>
-				<small>Descripción</small>
-			</figcaption>
-		</figure>
-		<figure class="col-md-4">
-			<img src="http://placehold.it/650x400" alt="" class="img-responsive">
-			<figcaption>
-				<small>Descripción</small>
-			</figcaption>
-		</figure>
-		<figure class="col-md-4">
-			<img src="http://placehold.it/650x400" alt="" class="img-responsive">
-			<figcaption>
-				<small>Descripción</small>
-			</figcaption>
-		</figure>
-		<figure class="col-md-4">
-			<img src="http://placehold.it/650x400" alt="" class="img-responsive">
-			<figcaption>
-				<small>Descripción</small>
-			</figcaption>
-		</figure>
+			<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
+			<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
+			<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
+		</ul>
 	</section>
+	<!-- Contact -->
+	<a id="contacto"></a>
+	<section id="contact">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8  text-center">
+				<div class="big-title">
+					<h2>Contacto</h2>
+					<div class="puntas"><span class="glyphicon glyphicon-star-empty"></span></div>
+				</div>
+				<p>
+					Si tienes alguna duda sobre lo que puedo o no hacer, conversemos, envíame un correo electrónico, hazme una llamada, por último un whatsapp y así solucionamos la interrogante ;)
+				</p>
+			</div>	
+			<div class="col-md-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 text-center">
+				<h3 class="title-text">Email</h3>
+				<p>jaime@disenoyweb.cl</p>
+			</div>
+			<div class="col-md-4 text-center">
+				<h3 class="title-text">Teléfono</h3>
+				<p>(+56 9) 8644 5120</p>
+			</div>
+			<div class="col-md-4 text-center">
+				<h3 class="title-text">Enlace</h3>
+				<p><a target="_blank" href="http://codepen.io/jiarcos">Codepen</a></p>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<small>hecho con &nbsp;<i class="material-icons" style="color: red;">favorite_border</i>&nbsp; por @jiarcos / diseño&web</small>
+	</footer>
 
 	<!-- modal box -->
 	<div class="modal-box">
