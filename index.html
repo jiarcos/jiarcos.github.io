@@ -19,7 +19,7 @@
 </head>
 <body class="container-fluid">
 	<!-- NavBar -->
-	<header>
+	<header class="container-fluid">
 		<nav class="navbar navbar-default">
 		    <!-- burger nav -->
 		    <div class="navbar-header">
@@ -44,69 +44,73 @@
 	</header>
 	<!-- Extracto -->
 	<a id="sobre-mi"></a>
-	<section class="container" id="extract">
-		<figure class="row">
-			<div class="avatar col-md-12">
-				<div class="img-dw">
-					<img src="images/dw500.jpg" alt="Logo Diseño & Web - @jiarcos" class="img-circle img-responsive">
+	<section id="extract">
+		<div class="container">
+			<figure class="row">
+				<div class="avatar col-md-12">
+					<div class="img-dw">
+						<img src="images/dw500.jpg" alt="Logo Diseño & Web - @jiarcos" class="img-circle img-responsive">
+					</div>
+					<div class="img-jiarcos">
+						<img src="images/jiarcos.jpg" alt="Jaime Arcos - @jiarcos" class="img-circle img-responsive">
+					</div>
 				</div>
-				<div class="img-jiarcos">
-					<img src="images/jiarcos.jpg" alt="Jaime Arcos - @jiarcos" class="img-circle img-responsive">
-				</div>
-			</div>
 
-			<div class="col-md-2"></div>
-			<figcaption class="col-md-8 text-center">
-				<div class="big-title">
-					<h1>Jaime Arcos Silva / @jiarcos</h1>
-					<div class="puntas"><span class="glyphicon glyphicon-star-empty"></span></div>
-				</div>
-				<p>
-					Si hay algo que me caracteriza es la necesidad aprender constantemente. En mi búsqueda del conocimiento he pasado de las Bellas Artes a lo Digital, en los último años evolucionando al Desarrollo Frontend de forma autodidacta. Creo que no hay nada como enfrentar desafíos y finalizarlos con éxito!
-				</p>
-			</figcaption>
-			<div class="col-md-2"></div>
-		</figure>
+				<div class="col-md-2"></div>
+				<figcaption class="col-md-8 text-center">
+					<div class="big-title">
+						<h1>Jaime Arcos Silva / @jiarcos</h1>
+						<div class="puntas"><span class="glyphicon glyphicon-star-empty"></span></div>
+					</div>
+					<p>
+						Si hay algo que me caracteriza es la necesidad aprender constantemente. En mi búsqueda del conocimiento he pasado de las Bellas Artes a lo Digital, en los último años evolucionando al Desarrollo Frontend de forma autodidacta. Creo que no hay nada como enfrentar desafíos y finalizarlos con éxito!
+					</p>
+				</figcaption>
+				<div class="col-md-2"></div>
+			</figure>
+		</div>
 	</section>
 	<!-- Experiencia y estudios -->
-	<section class="container" id="experience">
-		<div class="row">
-			<div class="col-sm-1 col-md-2"></div>
-			<article class=" col-sm-5 col-md-4">
-				<h3 class="title-text">Experiencia</h3>
-				<ul>
-					<li>
-						<p>{{2016}} Frontend Developer | Modyo</p>
-					</li>
-					<li>
-						<p>{{2015}} Productor Digital | Shackleton</p>
-					</li>
-					<li>
-						<p>{{2013}} Director de Arte | Caja de Ideas</p>
-					</li>
-					<li>
-						<p>{{2012}} Diseñador Multimedia | Trébol de 4</p>
-					</li>
-				</ul>
-			</article>
-			<article class="col-sm-5 col-md-4">
-				<h3 class="title-text">Estudios</h3>
-				<ul>
-					<li>
-						<p>{{2015}} Desarrollo Frontend | CoderHouse</p>
-					</li>
-					<li>
-						<p>{{2012}} Animación Digital | IP Arcos</p>
-					</li>
-					<li>
-						<p>{{2008}} Diplomado en Crossmedia | IP Arcos</p>
-					</li>
-					<li>
-						<p>{{2004}} Técnico Medio en Artes Visuales | LEA</p>
-					</li>
-				</ul>
-			</article>
-			<div class="col-sm-1 col-md-2"></div>
+	<section id="experience">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-1 col-md-2"></div>
+				<article class=" col-sm-5 col-md-4">
+					<h3 class="title-text">Experiencia</h3>
+					<ul>
+						<li>
+							<p>{{2016}} Frontend Developer | Modyo</p>
+						</li>
+						<li>
+							<p>{{2015}} Productor Digital | Shackleton</p>
+						</li>
+						<li>
+							<p>{{2013}} Director de Arte | Caja de Ideas</p>
+						</li>
+						<li>
+							<p>{{2012}} Diseñador Multimedia | Trébol de 4</p>
+						</li>
+					</ul>
+				</article>
+				<article class="col-sm-5 col-md-4">
+					<h3 class="title-text">Estudios</h3>
+					<ul>
+						<li>
+							<p>{{2015}} Desarrollo Frontend | CoderHouse</p>
+						</li>
+						<li>
+							<p>{{2012}} Animación Digital | IP Arcos</p>
+						</li>
+						<li>
+							<p>{{2008}} Diplomado en Crossmedia | IP Arcos</p>
+						</li>
+						<li>
+							<p>{{2004}} Técnico Medio en Artes Visuales | LEA</p>
+						</li>
+					</ul>
+				</article>
+				<div class="col-sm-1 col-md-2"></div>
+			</div>
 		</div>
 	</section>
 	<!-- Habilidades -->
@@ -178,62 +182,68 @@
 	<!-- Portfolio -->
 	<a id="trabajos"></a>
 	<section id="portfolio">
-		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-8  text-center">
-				<div class="big-title">
-					<h2>Portafolio</h2>
-					<div class="puntas"><span class="glyphicon glyphicon-star-empty"></span></div>
-				</div>
-				<p>
-					Aquí algunos de mis trabajos, quien dice si pronto un encargo tuyo pueda aparecer en esta sección!
-					si ves algo interesant pero no es excatamente lo que buscas, hablemos...  
-				</p>
-			</div>	
-			<div class="col-md-2"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8  text-center">
+					<div class="big-title">
+						<h2>Portafolio</h2>
+						<div class="puntas"><span class="glyphicon glyphicon-star-empty"></span></div>
+					</div>
+					<p>
+						Aquí algunos de mis trabajos, quien dice si pronto un encargo tuyo pueda aparecer en esta sección!
+						si ves algo interesant pero no es excatamente lo que buscas, hablemos...  
+					</p>
+				</div>	
+				<div class="col-md-2"></div>
+			</div>
 		</div>
-		<ul class="row">
-			<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
-			<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
-			<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
+		<div class="container-fluid">
+			<ul class="row">
+				<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
+				<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
+				<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
 
-			<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
-			<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
-			<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
+				<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
+				<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
+				<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
 
-			<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
-			<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
-			<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
-		</ul>
+				<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
+				<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
+				<li class="col-sm-6 col-md-4"><a href=""><img src="http://lorempixel.com/600/400" alt="" class="img-responsive"></a></li>
+			</ul>
+		</div>
 	</section>
 	<!-- Contact -->
 	<a id="contacto"></a>
 	<section id="contact">
-		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-8  text-center">
-				<div class="big-title">
-					<h2>Contacto</h2>
-					<div class="puntas"><span class="glyphicon glyphicon-star-empty"></span></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8  text-center">
+					<div class="big-title">
+						<h2>Contacto</h2>
+						<div class="puntas"><span class="glyphicon glyphicon-star-empty"></span></div>
+					</div>
+					<p>
+						Si tienes alguna duda sobre lo que puedo o no hacer, conversemos, envíame un correo electrónico, hazme una llamada, por último un whatsapp y así solucionamos la interrogante ;)
+					</p>
+				</div>	
+				<div class="col-md-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<h3 class="title-text">Email</h3>
+					<p>jaime@disenoyweb.cl</p>
 				</div>
-				<p>
-					Si tienes alguna duda sobre lo que puedo o no hacer, conversemos, envíame un correo electrónico, hazme una llamada, por último un whatsapp y así solucionamos la interrogante ;)
-				</p>
-			</div>	
-			<div class="col-md-2"></div>
-		</div>
-		<div class="row">
-			<div class="col-md-4 text-center">
-				<h3 class="title-text">Email</h3>
-				<p>jaime@disenoyweb.cl</p>
-			</div>
-			<div class="col-md-4 text-center">
-				<h3 class="title-text">Teléfono</h3>
-				<p>(+56 9) 8644 5120</p>
-			</div>
-			<div class="col-md-4 text-center">
-				<h3 class="title-text">Enlace</h3>
-				<p><a target="_blank" href="http://codepen.io/jiarcos">Codepen</a></p>
+				<div class="col-md-4 text-center">
+					<h3 class="title-text">Teléfono</h3>
+					<p>(+56 9) 8644 5120</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<h3 class="title-text">Enlace</h3>
+					<p><a target="_blank" href="http://codepen.io/jiarcos">Codepen</a></p>
+				</div>
 			</div>
 		</div>
 	</section>
