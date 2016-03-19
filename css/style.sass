@@ -1,17 +1,22 @@
+//VARIABLES COLORS
 $primary-color: #0071B2
 $secondary-color: #2D2C31
 $primary-font-color: #444349
 $primary-background-color: #f9f9f9
 
-body
-    -webkit-font-smoothing: antialiased
-    font-family: 'Open Sans', sans-serif
-    font-size: 16px
-    background-color: $primary-background-color
-    color: $primary-font-color
+//VARIABLES MEDIA QUERIES //@media #{$m1200}
+// Large Devices, Wide Screens
+$m1200: 'only screen and (max-width : 1200px)' 
+// Medium Devices, Desktops
+$m992: 'only screen and (max-width : 992px)'
+// Small Devices, Tablets
+$m768: 'only screen and (max-width : 768px)'
+// Extra Small Devices, Phones
+$m480: 'only screen and (max-width : 480px)'
+// Custom, iPhone Retina 
+$m320: 'only screen and (max-width : 320px)'
 
-
-// boostrap overide
+// BOOTSTRAP OVERRIDE
 .navbar-default
     background-color: #fff
     border-color: #fff
@@ -55,7 +60,13 @@ body
     margin-right: 0px
     margin-left: 0px
 
-// fin bootstrap overide
+//GLOBAL
+body
+    -webkit-font-smoothing: antialiased
+    font-family: 'Open Sans', sans-serif
+    font-size: 16px
+    background-color: $primary-background-color
+    color: $primary-font-color
 
 .modal-box
     position: fixed
@@ -101,6 +112,8 @@ ul
         border-right: 150px solid $primary-font-color
         border-bottom: 5px solid transparent
         margin-right: 20px 
+        @media #{$m480}
+            border-right: 100px solid $primary-font-color
     &:after
         content: ''
         width: 0
@@ -109,7 +122,8 @@ ul
         border-left: 150px solid $primary-font-color
         border-bottom: 5px solid transparent
         margin-left: 20px
-
+        @media #{$m480}
+            border-left: 100px solid $primary-font-color
 .glyphicon
     font-size: 46px
 
@@ -135,9 +149,11 @@ ul
             z-index: -1
             img
                 max-height: 150px
+
 // EXPERIENCE
 #experience
     padding-bottom: 40px
+
 // SKILLS
 #skills
     background: url('../images/stardust.png') repeat
@@ -146,8 +162,12 @@ ul
         color: $primary-background-color !important
     .puntas:before
         border-right: 150px solid $primary-background-color
+        @media #{$m480}
+            border-right: 100px solid $primary-background-color
     .puntas:after
         border-left: 150px solid $primary-background-color
+        @media #{$m480}
+            border-left: 100px solid $primary-background-color
     .skill-container
         border: 1px solid #ccc
         padding: 20px 0px
@@ -158,6 +178,8 @@ ul
         flex-direction: column
         align-items: center
         transition: 0.2s linear all
+        @media #{$m768}
+            margin-bottom: 20px
         &:hover
             background: $secondary-color
             color: white
@@ -184,6 +206,7 @@ ul
                 font-size: 50px
                 color: white
                 transition: 0.2s linear all
+
 // PORTFOLIO
 #portfolio
     margin: 40px 0px 0px
@@ -192,6 +215,7 @@ ul
         padding-top: 20px
         li
             padding: 0px 
+
 //CONTACT
 #contact
     background: url('../images/stardust.png') repeat
@@ -200,14 +224,19 @@ ul
         color: $primary-background-color !important
     .puntas:before
         border-right: 150px solid $primary-background-color
+        @media #{$m480}
+            border-right: 100px solid $primary-background-color
     .puntas:after
         border-left: 150px solid $primary-background-color 
+        @media #{$m480}
+            border-left: 100px solid $primary-background-color 
     .title-text, a
         color: white    
         text-decoration: none
     a:hover
         text-decoration: none
         font-weight: bold
+
 //FOOTER
 footer
     background: $secondary-color
@@ -216,5 +245,3 @@ footer
     small
         display: flex
         justify-content: center
-
-
