@@ -33,6 +33,9 @@ $m320: 'only screen and (max-width : 320px)'
     width: 100%
     display: flex
     justify-content: space-between
+    @media #{$m480}
+        flex-direction: column
+        align-items: center
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
@@ -89,6 +92,27 @@ h1, h2
 ul
     list-style: none
     padding: 0px
+
+.logo-dw
+    position: fixed
+    z-index: 1000
+    width: 50px
+    left: 50%
+    margin-left: -25px
+    opacity: 0
+    transition: 0.2s linear all
+    display: flex
+    align-items: center
+    @media #{$m768}
+        left: 35px
+    img
+        height: 50px
+        width: 50px
+    h2
+        display: none
+        @media #{$m768}
+            display: inline-block
+            margin-left: 10px
 
 .title-text
     &:before
