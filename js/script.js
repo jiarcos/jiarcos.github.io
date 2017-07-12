@@ -14,7 +14,7 @@ $(document).ready(function() {
   });
 
   $(window).scroll(function(){
-    console.log($(window).scrollTop());
+    // console.log($(window).scrollTop());
     if ($(window).scrollTop() > 185) {
       $('.logo-dw').css('opacity', 1);
     }else{
