@@ -16,6 +16,9 @@ $m480: 'only screen and (max-width : 480px)'
 // Custom, iPhone Retina 
 $m320: 'only screen and (max-width : 320px)'
 
+*
+    transition: .3s all ease
+
 // BOOTSTRAP OVERRIDE
 .navbar-default
     background-color: #fff
@@ -33,7 +36,6 @@ $m320: 'only screen and (max-width : 320px)'
     width: 100%
     display: flex
     justify-content: space-between
-    transition: .3s all ease
     @media #{$m768}
         margin-left: 0px !important
         margin-right: 0px !important
@@ -76,6 +78,9 @@ body
     background-color: $primary-background-color
     color: $primary-font-color
 
+.big-title
+    padding: 30px 0
+
 .modal-box
     position: fixed
     width: 450px
@@ -107,7 +112,6 @@ ul
     left: 50%
     margin-left: -26px
     opacity: 0
-    transition: 0.2s linear all
     display: flex
     align-items: center
     @media #{$m768}
@@ -181,6 +185,12 @@ ul
             z-index: -1
             img
                 max-height: 150px
+article    
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-top: 20px
 
 // EXPERIENCE
 #experience
@@ -203,13 +213,13 @@ ul
     .skill-container
         border: 1px solid #ccc
         padding: 20px 0px
+        margin-top: 20px 
         border-radius: 3px
         box-shadow: 0 2px 3px rgba(0,0,0,0.2)
         background: white
         display: flex
         flex-direction: column
         align-items: center
-        transition: 0.2s linear all
         @media #{$m768}
             margin-bottom: 20px
         &:hover
@@ -237,7 +247,6 @@ ul
             .material-icons
                 font-size: 50px
                 color: white
-                transition: 0.2s linear all
 
 // PORTFOLIO
 #portfolio

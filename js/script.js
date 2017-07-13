@@ -17,9 +17,9 @@ $(document).ready(function() {
     // console.log($(window).scrollTop());
     if ($(window).scrollTop() > 185) {
       $('.logo-dw').css('opacity', 1);
-      $('.logo-dw').css('top', 10);
-      $('.navbar-default').css('padding-top', 10);
-      $('.navbar-default').css('padding-bottom', 10);
+      $('.logo-dw').css('top', 5);
+      $('.navbar-default').css('padding-top', 5);
+      $('.navbar-default').css('padding-bottom', 5);
     }else{
       $('.logo-dw').css('opacity',0);
       $('.logo-dw').css('top', 0);
