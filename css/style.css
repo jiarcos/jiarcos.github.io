@@ -13,7 +13,8 @@
 .nav.navbar-nav {
   width: 100%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  transition: 0.3s all ease; }
   @media only screen and (max-width: 768px) {
     .nav.navbar-nav {
       margin-left: 0px !important;
@@ -51,7 +52,8 @@
 
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: "Open Sans", sans-serif;
+  font-smoothing: antialiased;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   background-color: #f9f9f9;
   color: #444349; }
@@ -69,10 +71,12 @@ body {
   display: none; }
 
 h1, h2 {
-  font-family: "Lobster", cursive;
+  font-family: "Montserrat", cursive;
   font-weight: bold;
   font-size: 40px;
-  margin: 0px; }
+  margin: 0px;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 ul {
   list-style: none;
@@ -151,14 +155,14 @@ ul {
       position: absolute;
       top: 0px;
       right: 50%;
-      margin-right: -26px; }
+      margin-right: -20px; }
       #extract .avatar .img-dw img {
         max-height: 150px; }
     #extract .avatar .img-jiarcos {
       position: absolute;
       top: 0px;
       left: 50%;
-      margin-left: -26px;
+      margin-left: -20px;
       z-index: -1; }
       #extract .avatar .img-jiarcos img {
         max-height: 150px; }
