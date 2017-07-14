@@ -28,5 +28,9 @@ $(document).ready(function() {
     }
   });
 
+  $('#bs-example-navbar-collapse-1 li a').click(function(){
+    $('#bs-example-navbar-collapse-1').removeClass('in');
+  });
+
 });
   

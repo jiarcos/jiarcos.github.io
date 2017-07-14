@@ -1,6 +1,3 @@
-* {
-  transition: 0.3s all ease; }
-
 .navbar-default {
   background-color: #fff;
   border-color: #fff;
@@ -11,13 +8,14 @@
   width: 100%;
   border-radius: 0px;
   background: white;
-  z-index: 100; }
+  z-index: 100;
+  transition: 0.3s all linear; }
 
 .nav.navbar-nav {
   width: 100%;
   display: flex;
   justify-content: space-between; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     .nav.navbar-nav {
       margin-left: 0px !important;
       margin-right: 0px !important; } }
@@ -32,6 +30,10 @@
   color: #0071B2;
   background-color: #fff;
   font-weight: bold; }
+
+#bs-example-navbar-collapse-1 {
+  transition: 0.3s all linear;
+  border: 0; }
 
 .navbar-default .navbar-nav > li > a:hover {
   color: #444349; }
@@ -95,8 +97,9 @@ ul {
   margin-left: -26px;
   opacity: 0;
   display: flex;
-  align-items: center; }
-  @media only screen and (max-width: 768px) {
+  align-items: center;
+  transition: 0.3s all linear; }
+  @media only screen and (max-width: 767px) {
     .logo-dw {
       left: 35px; } }
   .logo-dw img {
@@ -105,7 +108,7 @@ ul {
   .logo-dw h2 {
     font-size: 28px !important;
     display: none; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
       .logo-dw h2 {
         display: inline-block;
         margin-left: 10px; } }
@@ -205,17 +208,21 @@ article {
     background: white;
     display: flex;
     flex-direction: column;
-    align-items: center; }
-    @media only screen and (max-width: 768px) {
+    align-items: center;
+    transition: 0.3s all linear; }
+    @media only screen and (max-width: 767px) {
       #skills .skill-container {
         margin-bottom: 20px; } }
     #skills .skill-container:hover {
+      color: white;
       background: #2D2C31;
-      color: white; }
-    #skills .skill-container:hover .skyll-icon {
-      background: white; }
+      transition: 0.3s all linear; }
+    #skills .skill-container:hover .skill-icon {
+      background: white;
+      transition: 0.3s all linear; }
     #skills .skill-container:hover .material-icons {
-      color: #2D2C31 !important; }
+      color: #2D2C31 !important;
+      transition: 0.3s all linear; }
   #skills ul.row {
     margin: 20px 0px 10px; }
     #skills ul.row .skill-list li {
@@ -223,7 +230,7 @@ article {
       padding: 10px 0px; }
     #skills ul.row .skill-list li:last-child {
       border-bottom: 0px; }
-    #skills ul.row .skyll-icon {
+    #skills ul.row .skill-icon {
       height: 100px;
       width: 100px;
       background: #0071B2;
@@ -231,7 +238,7 @@ article {
       justify-content: center;
       align-items: center;
       margin-bottom: 20px; }
-      #skills ul.row .skyll-icon .material-icons {
+      #skills ul.row .skill-icon .material-icons {
         font-size: 50px;
         color: white; }
 
